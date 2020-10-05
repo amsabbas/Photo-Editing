@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/cairo_font"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llPhotoCollage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@color/black_light"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgCollage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_photo_collage_frame24" />
+
+                <TextView
+                    android:id="@+id/tvCollage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgCollage"
+                    android:fontFamily="@font/cairo_font"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="@string/photo_collage_button_title"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llPhotoEffects"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@color/black_light"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgEffects"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/ic_photo_effects" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgEffects"
+                    android:fontFamily="@font/cairo_font"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="@string/photo_effects_button_title"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/llPhotoWrap"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@color/black_light"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgPhotoWrap"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/ic_photo_wrap" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgPhotoWrap"
+                    android:fontFamily="@font/cairo_font"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="@string/photo_wrap_button_title"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llRate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dip"
+            android:layout_weight="1"
+            android:background="@color/black_light"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imgRate"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:clickable="false"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="15dp"
+                    android:src="@drawable/ic_rate" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/imgRate"
+                    android:fontFamily="@font/cairo_font"
+                    android:gravity="bottom|center_horizontal"
+                    android:text="@string/rate_button_title"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

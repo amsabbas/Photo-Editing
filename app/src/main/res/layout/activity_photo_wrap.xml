@@ -1,0 +1,184 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/iBClose"
+            android:layout_width="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:onClick="close"
+            android:padding="14dp"
+            android:src="@drawable/ic_back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+
+            <ImageButton
+                android:id="@+id/ibPinIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="pinIn"
+                android:contentDescription="@string/app_name"
+                android:padding="14dp"
+                android:src="@drawable/ic_pin_in" />
+
+            <ImageButton
+                android:id="@+id/ibPinOut"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="pinOut"
+                android:contentDescription="@string/app_name"
+                android:padding="14dp"
+                android:src="@drawable/ic_pin_out" />
+
+            <ImageButton
+                android:id="@+id/ibWrap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/app_name"
+                android:background="@null"
+                android:onClick="wrap"
+                android:padding="14dp"
+                android:src="@drawable/ic_wrap_pressed" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="back"
+                android:contentDescription="@string/app_name"
+                android:padding="14dp"
+                android:src="@drawable/bg_redo" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:onClick="restart"
+                android:contentDescription="@string/app_name"
+                android:paddingStart="14dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:src="@drawable/bg_refresh" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@android:color/transparent">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/llShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="32dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:onClick="shareImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:background="@drawable/bg_share" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/cairo_font"
+                    android:layout_marginTop="4dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:layout_height="wrap_content"
+                    android:text="@string/share_button_tittle" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/llShare"
+                android:layout_marginStart="32dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:onClick="saveImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:background="@drawable/bg_save" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/cairo_font"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:text="@string/save_button_title" />
+
+            </LinearLayout>
+
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@null"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:layout_marginEnd="32dp"
+                android:src="@drawable/bg_gallery"
+                android:onClick="openGallery" />
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

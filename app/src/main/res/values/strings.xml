@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Photo Editor Pro</string>
+    <string name="photo_collage_button_title">Photo Collage</string>
+    <string name="photo_wrap_button_title">Face Wrap</string>
+    <string name="photo_effects_button_title">Photo Effects</string>
+    <string name="rate_button_title">Rate</string>
+    <string name="save_button_title">SAVE</string>
+    <string name="share_button_tittle">SHARE</string>
+    <string name="main_title">Photo Editing+</string>
+    <string name="photo_wrap_title">Photo Wrap+</string>
+    <string name="photo_collage_title">Photo Collage+</string>
+    <string name="photo_effects_filters_title">Filters</string>
+    <string name="photo_effects_adjust_title">Adjust</string>
+    <string name="photo_effects_frames_title">Frames</string>
+    <string name="photo_effects_brightness">Brightness</string>
+    <string name="photo_effects_contrast">Contrast</string>
+    <string name="photo_effects_saturation">Saturation</string>
+
+
+</resources>

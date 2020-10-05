@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#364f6b</color>
+    <color name="colorPrimaryDark">#364f6b</color>
+    <color name="colorAccent">#4f8a8b</color>
+    <color name="gray">#dddddd</color>
+    <color name="gray_light">#eeeeee</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000</color>
+    <color name="black_light">#191919</color>
+    <color name="gray_dark">#aaaaaa</color>
+    <color name="green">#4f8a8b</color>
+
+    <color name="ucrop_color_toolbar">@color/black</color>
+    <color name="ucrop_color_statusbar">@color/black</color>
+    <color name="ucrop_color_widget_active">@color/black</color>
+</resources>

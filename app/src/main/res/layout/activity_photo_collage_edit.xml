@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/iBClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="14dp"
+            android:layout_centerVertical="true"
+            android:onClick="close"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/cairo_font"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:layout_height="wrap_content"
+            android:text="@string/photo_collage_button_title" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlParent"
+        android:layout_below="@id/rlHeader"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom"
+        android:layout_below="@id/rlParent"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btSave"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:layout_margin="5dp"
+        android:drawableTop="@drawable/ic_save"
+        android:drawablePadding="4dp"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:text="@string/save_button_title"/>
+
+        <Button
+            android:id="@+id/btShare"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:drawablePadding="4dp"
+            android:drawableTop="@drawable/ic_share"
+            android:background="@android:color/transparent"
+            android:layout_height="wrap_content"
+            android:text="@string/share_button_tittle"/>
+    </LinearLayout>
+
+</RelativeLayout>

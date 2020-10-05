@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/iBClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:contentDescription="@string/app_name"
+            android:padding="14dp"
+            android:src="@drawable/ic_back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end">
+
+
+            <ImageButton
+                android:id="@+id/ibPGallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:onClick="pinIn"
+                android:padding="14dp"
+                android:src="@drawable/bg_photo_lab_gallery" />
+
+            <ImageButton
+                android:id="@+id/ibShare"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:onClick="pinOut"
+                android:padding="14dp"
+                android:src="@drawable/bg_photo_lab_share" />
+
+            <ImageButton
+                android:id="@+id/ibSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:contentDescription="@string/app_name"
+                android:onClick="wrap"
+                android:padding="14dp"
+                android:src="@drawable/bg_photo_lab_save" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/rlImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgLab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bg_pic_holder" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgLabBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:gravity="center|center_horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btFrames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+
+            android:drawableStart="@drawable/ic_frame_pressed"
+            android:drawablePadding="8dp"
+            android:gravity="start|center_vertical"
+            android:text="@string/photo_effects_frames_title"
+            android:textAllCaps="false"
+            android:textColor="@color/green" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btFilter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/ic_filter"
+            android:drawablePadding="8dp"
+            android:gravity="start|center_vertical"
+            android:text="@string/photo_effects_filters_title"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btAdjust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/ic_adjust"
+            android:drawablePadding="8dp"
+            android:gravity="start|center_vertical"
+            android:text="@string/photo_effects_adjust_title"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFilters"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFrames"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="120dp" />
+
+        <include android:id="@+id/llAdjust"
+            layout="@layout/item_photo_lab_adjust"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
